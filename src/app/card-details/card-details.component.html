@@ -1,0 +1,13 @@
+<div>
+  <div *ngFor="let product of products">
+    <img [src]="product.img" alt="">
+    <div>{{product.title}}</div>
+    <div>{{product.exitYear}}</div>
+    <div>{{product.productHeight}}</div>
+    <div>{{product.productWeight}}</div>
+    <div>{{product.itemsProduced}}</div>
+    <div>{{product.description}}</div>
+    <div>Prezzo: {{product.price}}€</div>
+    <button>Chiudi</button>
+  </div>
+</div>

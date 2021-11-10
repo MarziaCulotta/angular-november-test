@@ -1,0 +1,12 @@
+<div class="">
+  <div class="border" *ngFor="let product of products">
+    <img [src]="product.img" alt="">
+    <div>{{product.title}}</div>
+    <div> {{product.price}}</div>
+    <button (click)="showDetails.emit(product)">Show details</button>
+  </div>
+</div>
+
+<angtest-card-details [products]="products"></angtest-card-details>
+
+
